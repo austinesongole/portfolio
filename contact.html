@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9c34fa4364.js" crossorigin="anonymous"></script>
+    <title>Austine Songole: Home page</title>
+    <link rel="stylesheet" href="./css/main.css">
     <title>About</title>
+
 </head>
+        <style>
+            body{
+                background-color: rgb(223, 223, 226) ;
+            }
+            .main{
+               text-align: center;
+                background-color: rgb(116, 121, 197);
+                background-size: contain;
+                transition: 0.7s;
+             }
+            .main:hover{
+                 box-shadow: 0  8px 16px 0 rgb(19, 227, 235);
+            }
+            .navbar{
+              list-style-type: none;
+              margin: 0;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              min-height: 30px;
+              background-color:red;
+      
+            }
+            
+           
+
+        </style>
 <body>
 <!--navigation bar section-->
     <nav>
@@ -18,44 +49,33 @@
     </nav>
     <!--hero section-->
     <header>
-        <img src="/image%20io.htm" alt="about">
+        <img src="images/steve.jpeg.jpg" height="150" width="150">
         <h1>About me</h1>
         <p>find out everything about me</p>
     </header>
     <!--Main page content-->
-    <main>
-        <h2>contact me</h2>
-        <from action="">
-            <div>
-                <label for="name">Austine Songole</label>
-                <input type="text"id="name"size="20"/>
-            </div>
-            <div>
-                <label for="email">product</label>
-                <select name="email" id="email"size="20"/>
-            </div>
-            <div>
-                <label for="subject">subject</label>
-                <input type="text"name="subjec"id=subject>
-            </div>
-            <div>
-                <label for="product">product</label>
-                <select name="product" id="product">
-                    <option value="web">web application</option>
-                    <option value="desktop">desktop application</option>
-                    <option value="mobile">mobile application</option>
-                    <option value="other"other></option>
-                </select>
-            </div>
-            <div>
-                <label for="message">your message</label>
-                <textarea name="" id="" cols="20" rows="5"></textarea>
-            </div>
-            <input type="submit"name="submit"value="send"/>
-        </from>
-       
+    <div class="main">
+        <div class="main"> 
+            <form action="action.php">
+                <label for="email" style="color: rgb(194, 207, 211);">Email adress</label>
+                <input type="text" placeholder="Your email">
+                <br>
+                <br>
+                <label for="name" style="color: rgb(194, 207, 211);">Name</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Your name"> 
+                <br>
+                <br>
+                <label for="Phone" style="color: rgb(194, 207, 211);">Mobile Number</label>
+                <br>
+                <input type="number" placeholder="+254">
+                <br>
+                <br>
+                <label for="option" style="color: rgb(194, 207, 211);">Preffered means of communication</label>
+                <input type="checkbox" style="color: rgb(194, 207, 211);">
+            </form>
+        </div>
 
-    </main>
+    </div>
     <!--footer section-->
     <footer>
         <ul>
